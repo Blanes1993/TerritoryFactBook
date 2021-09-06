@@ -9,6 +9,10 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    
   <!-- JQUERY STARTS HERE -->
 
   <script>
@@ -32,6 +36,20 @@
        //region 13
        $(".dropdown5").click(function(){
         $("#collapseExample5").toggle();
+      });
+
+      //REGION 9
+      //ZAMBOANGA DEL NORTE sub row collapsible
+      $(".dropdown-list").click(function(){
+        $("#dropdownMenu").toggle();
+      });
+      //ZAMBOANGA DEL SUR sub row collapsible
+      $(".dropdown-list2").click(function(){
+        $("#dropdownMenu2").toggle();
+      });
+      //ZAMBOANGA SIBUGAY sub row collapsible
+      $(".dropdown-list3").click(function(){
+        $("#dropdownMenu3").toggle();
       });
 
 
@@ -64,17 +82,129 @@
           <tr class="dropdown" data-bs-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="collapseExample">
             <td scope="row"><i class="fa fa-caret-down p-1"></i>Region 9: Zamboanga Peninsula</td>
           </tr>
+          <!-- COLLASIBLE ROW -->
           <tr class="collapse collapse-horizontal" id="collapseExample">
             <td class="sub-table">
-              <i class="fa fa-caret-down ms-3 me-2"></i>Zamboanga del Norte<br><i class="fa fa-caret-down ms-3 me-2"></i>Zamboanga del Sur<br><i class="fa fa-caret-down ms-3 me-2"></i>Zamboanga Sibugay</td>
-          </tr>
+              <ul class="list-group">
+
+               <li class="dropdown-list" data-bs-toggle="collapse"><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Zamboanga del Norte</a></li> 
+               
+               <!-- Zamboanga del Norte COLLAPSIBLE CHILD ROW-->
+                <div class="collapse ms-5 m-2" id="dropdownMenu">
+                  <div class="">
+                   <ul class="list-group">
+                        <li class="list-group-item list-group-item-action" type="button">Baliguian</li>   		
+                        <li class="list-group-item list-group-item-action" type="button">Dapitan</li>	 	
+                        <li class="list-group-item list-group-item-action" type="button">Dipolog</li>
+                        <li class="list-group-item list-group-item-action" type="button">Godod</li>
+                        <li class="list-group-item list-group-item-action" type="button">Gutalac</li>
+                        <li class="list-group-item list-group-item-action" type="button">Jose Dalman</li> 
+                        <li class="list-group-item list-group-item-action" type="button">Kalawit</li>   		
+                        <li class="list-group-item list-group-item-action" type="button">Katipunan</li>	 	
+                        <li class="list-group-item list-group-item-action" type="button">La Libertad</li>
+                        <li class="list-group-item list-group-item-action" type="button">Labason</li>
+                        <li class="list-group-item list-group-item-action" type="button">Leon Postigo</li>
+                        <li class="list-group-item list-group-item-action" type="button">Liloy</li>
+                        <li class="list-group-item list-group-item-action" type="button">Manukan </li>
+                        <li class="list-group-item list-group-item-action" type="button">Mutia</li>
+                        <li class="list-group-item list-group-item-action" type="button">Pinan</li>
+                        <li class="list-group-item list-group-item-action" type="button">Polanco</li>
+                        <li class="list-group-item list-group-item-action" type="button">Rizal</li>
+                        <li class="list-group-item list-group-item-action" type="button">Roxas</li>
+                        <li class="list-group-item list-group-item-action" type="button">Salug</li>
+                        <li class="list-group-item list-group-item-action" type="button">Sergio Osmeña Sr.</li>
+                        <li class="list-group-item list-group-item-action" type="button">Siayan</li>
+                        <li class="list-group-item list-group-item-action" type="button">Sibuco</li>   
+                        <li class="list-group-item list-group-item-action" type="button">Sibutad</li>   
+                        <li class="list-group-item list-group-item-action" type="button">Sindangan</li>   
+                        <li class="list-group-item list-group-item-action" type="button">Siocon</li>
+                        <li class="list-group-item list-group-item-action" type="button">Siraway</li>
+                        <li class="list-group-item list-group-item-action" type="button">Tampilisan</li> 
+                   </ul>
+                  </div>
+                </div>
+                  
+               <li class="dropdown-list2" data-bs-toggle="collapse"><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Zamboanga del Sur</a></li> 
+              <!-- Zamboanga del Sur COLLAPSIBLE CHILD ROW-->
+               <div class="collapse ms-5 m-2" id="dropdownMenu2">
+                <div class="">
+                 <ul class="list-group">
+                 		
+                      <li class="list-group-item list-group-item-action" type="button">Aurora</li>	 	
+                      <li class="list-group-item list-group-item-action" type="button">Bayog</li>
+                      <li class="list-group-item list-group-item-action" type="button">Dimataling</li>
+                      <li class="list-group-item list-group-item-action" type="button">Dinas</li> 		
+                      <li class="list-group-item list-group-item-action" type="button">Don Mariano Marcos</li>	 	
+                      <li class="list-group-item list-group-item-action" type="button">Dumalinao</li>
+                      <li class="list-group-item list-group-item-action" type="button">Dumingag</li>
+                      <li class="list-group-item list-group-item-action" type="button">Guipos</li>
+                      <li class="list-group-item list-group-item-action" type="button">Josefina</li>
+                      <li class="list-group-item list-group-item-action" type="button">Kumalarang</li>
+                      <li class="list-group-item list-group-item-action" type="button">Labangan</li>
+                      <li class="list-group-item list-group-item-action" type="button">Lakewood</li>
+                      <li class="list-group-item list-group-item-action" type="button">Lapuyan</li>
+                      <li class="list-group-item list-group-item-action" type="button">Mahayag</li> 
+                      <li class="list-group-item list-group-item-action" type="button">Margo sa Tubig </li>   
+                      <li class="list-group-item list-group-item-action" type="button">Midsalip</li>   
+                      <li class="list-group-item list-group-item-action" type="button">Molave</li>
+                      <li class="list-group-item list-group-item-action" type="button">Pagadian</li>             
+                      <li class="list-group-item list-group-item-action" type="button">Pitogo</li>
+                      <li class="list-group-item list-group-item-action" type="button">Ramon Magsaysay</li>
+                      <li class="list-group-item list-group-item-action" type="button">San Miguel</li>
+                      <li class="list-group-item list-group-item-action" type="button">San Pablo</li>
+                      <li class="list-group-item list-group-item-action" type="button">Tabina</li>                      
+                      <li class="list-group-item list-group-item-action" type="button">Tambulig </li>   
+                      <li class="list-group-item list-group-item-action" type="button">Tigbad</li>   
+                      <li class="list-group-item list-group-item-action" type="button">Tukuran</li>         
+                      <li class="list-group-item list-group-item-action" type="button">Vicencio Sagun</li>
+                      <li class="list-group-item list-group-item-action" type="button">Zamboanga City</li>
+                 </ul>
+                </div>
+              </div>
+               
+               <li class="dropdown-list3" data-bs-toggle="collapse"><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Zamboanga Sibugay</a></li> 
+                  <!-- Zamboanga Sibugay COLLAPSIBLE CHILD ROW-->
+               <div class="collapse ms-5 m-2" id="dropdownMenu3">
+                <div class="">
+                 <ul class="list-group">
+                 		
+                  <li class="list-group-item list-group-item-action" type="button">Alicia</li> 
+                  <li class="list-group-item list-group-item-action" type="button">Buug</li>
+                  <li class="list-group-item list-group-item-action" type="button">Diplahan</li> 
+                  <li class="list-group-item list-group-item-action" type="button">Imelda</li>
+                  <li class="list-group-item list-group-item-action" type="button">Ipil</li>
+                  <li class="list-group-item list-group-item-action" type="button">Kabalasan</li>
+                  <li class="list-group-item list-group-item-action" type="button">Mabuhay</li>
+                  <li class="list-group-item list-group-item-action" type="button">Malangas</li>
+                  <li class="list-group-item list-group-item-action" type="button">Naga</li>
+                  <li class="list-group-item list-group-item-action" type="button">Olutanga</li>
+                  <li class="list-group-item list-group-item-action" type="button">Payao</li>
+                  <li class="list-group-item list-group-item-action" type="button">Roseller Lim </li>
+                  <li class="list-group-item list-group-item-action" type="button">Siay</li>
+                  <li class="list-group-item list-group-item-action" type="button">Talusan</li> 
+                  <li class="list-group-item list-group-item-action" type="button">Titay</li>
+                  <li class="list-group-item list-group-item-action" type="button">Tungawan</li>
+                 </ul>
+                </div>
+              </div>
+          </tr> 
+
+          <!-- END OF REGION 9 -->
+          
           <!-- REGION 10 -->
           <tr class="dropdown2" data-bs-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="collapseExample">
             <td scope="row"><i class="fa fa-caret-down p-1"></i>Region 10: Northern Mindanao</td>
           </tr>
           <tr class="collapse collapse-horizontal" id="collapseExample2">
             <td class="sub-table">
-              <i class="fa fa-caret-down ms-3 me-2"></i>Bukidnon<br><i class="fa fa-caret-down ms-3 me-2"></i>Camiguin<br><i class="fa fa-caret-down ms-3 me-2"></i>Lanao del Norte<br><i class="fa fa-caret-down ms-3 me-2"></i>Misamis Occidental<br><i class="fa fa-caret-down ms-3 me-2"></i>Misamis Oriental</td>
+              <ul class="list-group">
+                <li><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Bukidnon</a></li> 
+                <li><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Camiguin</a></li> 
+                <li><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Lanao del Norte</a></li> 
+                <li><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Misamis Occidental</a></li> 
+                <li><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Misamis Oriental</a></li> 
+               </ul>
+             
           </tr>
           <!-- REGION 11 -->
           <tr class="dropdown3" data-bs-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -82,7 +212,13 @@
           </tr>
           <tr class="collapse collapse-horizontal" id="collapseExample3">
             <td class="sub-table">
-              <i class="fa fa-caret-down ms-3 me-2"></i>Davao de Oro<br><i class="fa fa-caret-down ms-3 me-2"></i>Davao del Norte<br><i class="fa fa-caret-down ms-3 me-2"></i>Davao del Sur<br><i class="fa fa-caret-down ms-3 me-2"></i>Davao Occidental<br><i class="fa fa-caret-down ms-3 me-2"></i>Davao Oriental</td>
+              <ul class="list-group">
+                <li><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Davao de Oro</a></li> 
+                <li><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Davao del Norte</a></li> 
+                <li><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Davao del Sur</a></li> 
+                <li><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Davao Occidental</a></li> 
+                <li><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Davao Oriental</a></li> 
+               </ul>
           </tr>
           <!-- REGION 12 -->
           <tr class="dropdown4" data-bs-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -90,7 +226,12 @@
           </tr>
           <tr class="collapse collapse-horizontal" id="collapseExample4">
             <td class="sub-table">
-              <i class="fa fa-caret-down ms-3 me-2"></i>Cotabato<br><i class="fa fa-caret-down ms-3 me-2"></i>Sarangani<br><i class="fa fa-caret-down ms-3 me-2"></i>South Cotabato<br><i class="fa fa-caret-down ms-3 me-2"></i>Sultan Kudarat</td>
+              <ul class="list-group">
+                <li><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Cotabato</a></li> 
+                <li><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Sarangani</a></li> 
+                <li><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>South Cotabato</a></li> 
+                <li><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Sultan Kudarat</a></li> 
+               </ul>
           </tr>
           <!-- BARMM -->
           <tr class="dropdown5" data-bs-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="collapseExample">
@@ -98,7 +239,13 @@
           </tr>
           <tr class="collapse collapse-horizontal" id="collapseExample5">
             <td class="sub-table">
-              <i class="fa fa-caret-down ms-3 me-2"></i>Basilan<br><i class="fa fa-caret-down ms-3 me-2"></i>Lanao del Sur<br><i class="fa fa-caret-down ms-3 me-2"></i>Maguindanao<br><i class="fa fa-caret-down ms-3 me-2"></i>Sulu<br><i class="fa fa-caret-down ms-3 me-2"></i>Tawi-Tawi</td>
+              <ul class="list-group">
+                <li><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Basilan</a></li> 
+                <li><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Lanao del Sur</a></li> 
+                <li><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Maguindanao</a></li> 
+                <li><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Sulu</a></li> 
+                <li><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Tawi-Tawi</a></li> 
+               </ul>
           </tr>
 
         </tbody>
