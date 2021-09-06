@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- JQUERY STARTS HERE -->
+
+  <script>
+    $(document).ready(function(){
+      //region 9
+      $(".dropdown").click(function(){
+        $("#collapseExample").toggle();
+      });
+      //region 10
+      $(".dropdown2").click(function(){
+        $("#collapseExample2").toggle();
+      });
+      //region 11
+      $(".dropdown3").click(function(){
+        $("#collapseExample3").toggle();
+      });
+      //region 12
+      $(".dropdown4").click(function(){
+        $("#collapseExample4").toggle();
+      });
+       //region 13
+       $(".dropdown5").click(function(){
+        $("#collapseExample5").toggle();
+      });
+
+
+
+    //end
+    });
+
+
+  </script>
+</head>
+<body>
+
+
+
+    <!-- HEADING -->
+    <div class="header text-center p-4 p-md-5 mb-4 text-white bg-primary">
+      <h2>TERRITORY FACT-BOOK</h2>
+    </div>
+    <div class="container">
+
+      <table class="table table-bordered">
+        <thead class="table-primary">
+          <tr>
+            <th scope="col">REGION</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <!-- REGION 9-->
+          <tr class="dropdown" data-bs-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <td scope="row"><i class="fa fa-caret-down p-1"></i>Region 9: Zamboanga Peninsula</td>
+          </tr>
+          <tr class="collapse collapse-horizontal" id="collapseExample">
+            <td class="sub-table">
+              <i class="fa fa-caret-down ms-3 me-2"></i>Zamboanga del Norte<br><i class="fa fa-caret-down ms-3 me-2"></i>Zamboanga del Sur<br><i class="fa fa-caret-down ms-3 me-2"></i>Zamboanga Sibugay</td>
+          </tr>
+          <!-- REGION 10 -->
+          <tr class="dropdown2" data-bs-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <td scope="row"><i class="fa fa-caret-down p-1"></i>Region 10: Northern Mindanao</td>
+          </tr>
+          <tr class="collapse collapse-horizontal" id="collapseExample2">
+            <td class="sub-table">
+              <i class="fa fa-caret-down ms-3 me-2"></i>Bukidnon<br><i class="fa fa-caret-down ms-3 me-2"></i>Camiguin<br><i class="fa fa-caret-down ms-3 me-2"></i>Lanao del Norte<br><i class="fa fa-caret-down ms-3 me-2"></i>Misamis Occidental<br><i class="fa fa-caret-down ms-3 me-2"></i>Misamis Oriental</td>
+          </tr>
+          <!-- REGION 11 -->
+          <tr class="dropdown3" data-bs-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <td scope="row"><i class="fa fa-caret-down p-1"></i>Region 11: Davao Region</td>
+          </tr>
+          <tr class="collapse collapse-horizontal" id="collapseExample3">
+            <td class="sub-table">
+              <i class="fa fa-caret-down ms-3 me-2"></i>Davao de Oro<br><i class="fa fa-caret-down ms-3 me-2"></i>Davao del Norte<br><i class="fa fa-caret-down ms-3 me-2"></i>Davao del Sur<br><i class="fa fa-caret-down ms-3 me-2"></i>Davao Occidental<br><i class="fa fa-caret-down ms-3 me-2"></i>Davao Oriental</td>
+          </tr>
+          <!-- REGION 12 -->
+          <tr class="dropdown4" data-bs-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <td scope="row"><i class="fa fa-caret-down p-1"></i>Region 12: Soccskargen</td>
+          </tr>
+          <tr class="collapse collapse-horizontal" id="collapseExample4">
+            <td class="sub-table">
+              <i class="fa fa-caret-down ms-3 me-2"></i>Cotabato<br><i class="fa fa-caret-down ms-3 me-2"></i>Sarangani<br><i class="fa fa-caret-down ms-3 me-2"></i>South Cotabato<br><i class="fa fa-caret-down ms-3 me-2"></i>Sultan Kudarat</td>
+          </tr>
+          <!-- BARMM -->
+          <tr class="dropdown5" data-bs-toggle="collapse" href="#" role="button" aria-expanded="false" aria-controls="collapseExample">
+            <td scope="row"><i class="fa fa-caret-down p-1"></i>Barmm: Bangsamoro Autonomous Region in Muslim Mindanao</td>
+          </tr>
+          <tr class="collapse collapse-horizontal" id="collapseExample5">
+            <td class="sub-table">
+              <i class="fa fa-caret-down ms-3 me-2"></i>Basilan<br><i class="fa fa-caret-down ms-3 me-2"></i>Lanao del Sur<br><i class="fa fa-caret-down ms-3 me-2"></i>Maguindanao<br><i class="fa fa-caret-down ms-3 me-2"></i>Sulu<br><i class="fa fa-caret-down ms-3 me-2"></i>Tawi-Tawi</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+ 
+   
+</body>
+</html>
