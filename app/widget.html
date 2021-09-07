@@ -7,156 +7,20 @@
   <link rel="stylesheet" href="style.css" type="text/css">
   <title>Document</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+ <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <!-- <link href="/docs/5.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
 
     
   <!-- JQUERY STARTS HERE -->
 
-  <script>
-    $(document).ready(function(){
-      //region 9
-      $(".dropdown").click(function(){
-        $("#collapseExample").toggle();
-      });
-      //region 10
-      $(".dropdown2").click(function(){
-        $("#collapseExample2").toggle();
-      });
-      //region 11
-      $(".dropdown3").click(function(){
-        $("#collapseExample3").toggle();
-      });
-      //region 12
-      $(".dropdown4").click(function(){
-        $("#collapseExample4").toggle();
-      });
-       //region 13
-       $(".dropdown5").click(function(){
-        $("#collapseExample5").toggle();
-      });
-      //END OF PARENT TABLE
-
-      //REGION 9
-      //ZAMBOANGA DEL NORTE sub row collapsible
-      $(".dropdown-list").click(function(){
-        $("#dropdownMenu").toggle();
-      });
-      //ZAMBOANGA DEL SUR sub row collapsible
-      $(".dropdown-list2").click(function(){
-        $("#dropdownMenu2").toggle();
-      });
-      //ZAMBOANGA SIBUGAY sub row collapsible
-      $(".dropdown-list3").click(function(){
-        $("#dropdownMenu3").toggle();
-      });
-
-
-      //REGION 10 
-      //BUKIDNON sub row collapsible
-      $(".dropdown-list4").click(function(){
-        $("#dropdownMenu4").toggle();
-      });
-
-       //CAMIGUIN sub row collapsible
-       $(".dropdown-list5").click(function(){
-        $("#dropdownMenu5").toggle();
-      });
-      //LANAO DEL NORTE sub row collapsible
-      $(".dropdown-list6").click(function(){
-        $("#dropdownMenu6").toggle();
-      });
-       //MISAMIS OCCIDENTAL sub row collapsible
-       $(".dropdown-list7").click(function(){
-        $("#dropdownMenu7").toggle();
-      });
-       //MISAMIS ORIENTAL sub row collapsible
-       $(".dropdown-list8").click(function(){
-        $("#dropdownMenu8").toggle();
-      });
-
-      //REGION 11 
-      //DAVAO DE ORO sub row collapsible
-      $(".dropdown-list9").click(function(){
-        $("#dropdownMenu9").toggle();
-      });
-
-       //DAVAO DEL NORTE sub row collapsible
-       $(".dropdown-list10").click(function(){
-        $("#dropdownMenu10").toggle();
-      });
-      //DAVAO DEL SUR sub row collapsible
-      $(".dropdown-list11").click(function(){
-        $("#dropdownMenu11").toggle();
-      });
-       //DAVAO OCCIDENTAL sub row collapsible
-       $(".dropdown-list12").click(function(){
-        $("#dropdownMenu12").toggle();
-      });
-       //DAVAO ORIENTAL sub row collapsible
-       $(".dropdown-list13").click(function(){
-        $("#dropdownMenu13").toggle();
-      });
-
-      // REGION 12 
-      //COTABATO sub row collapsible
-      $(".dropdown-list14").click(function(){
-        $("#dropdownMenu14").toggle();
-      });
-
-       //SARANGANI sub row collapsible
-       $(".dropdown-list15").click(function(){
-        $("#dropdownMenu15").toggle();
-      });
-      //SOUTH COTABATO sub row collapsible
-      $(".dropdown-list16").click(function(){
-        $("#dropdownMenu16").toggle();
-      });
-       //DAVAO OCCIDENTAL sub row collapsible
-       $(".dropdown-list17").click(function(){
-        $("#dropdownMenu17").toggle();
-      });
-
-
-      // BANGSAMORO AUTONOMOUS REGION IN MUSLIM MINDANAO
-      //BASILAN sub row collapsible
-      $(".dropdown-list18").click(function(){
-        $("#dropdownMenu18").toggle();
-      });
-
-       //LANAO DEL SUR sub row collapsible
-       $(".dropdown-list19").click(function(){
-        $("#dropdownMenu19").toggle();
-      });
-
-       //MAGUINDANAO sub row collapsible
-       $(".dropdown-list20").click(function(){
-        $("#dropdownMenu20").toggle();
-      });
-
-      //SULU sub row collapsible
-      $(".dropdown-list21").click(function(){
-        $("#dropdownMenu21").toggle();
-      });
-
-       //TAWI-TAWI sub row collapsible
-       $(".dropdown-list22").click(function(){
-        $("#dropdownMenu22").toggle();
-      });
-    
-    
-
-    //end
-    });
-
-
-  </script>
+   <script src="jquery.js"></script> 
 </head>
 <body>
-
-
+  
 
     <!-- HEADING -->
     <div class="header text-center p-4 p-md-5 mb-4 text-white bg-primary">
@@ -185,35 +49,35 @@
                
                <!-- Zamboanga del Norte COLLAPSIBLE CHILD ROW-->
                 <div class="collapse ms-5 m-2" id="dropdownMenu">
-                  <div class="">
+                  <div class="list">
                    <ul class="list-group">
-                        <li class="list-group-item list-group-item-action" type="button">Baliguian</li>   		
-                        <li class="list-group-item list-group-item-action" type="button">Dapitan</li>	 	
-                        <li class="list-group-item list-group-item-action" type="button">Dipolog</li>
-                        <li class="list-group-item list-group-item-action" type="button">Godod</li>
-                        <li class="list-group-item list-group-item-action" type="button">Gutalac</li>
-                        <li class="list-group-item list-group-item-action" type="button">Jose Dalman</li> 
-                        <li class="list-group-item list-group-item-action" type="button">Kalawit</li>   		
-                        <li class="list-group-item list-group-item-action" type="button">Katipunan</li>	 	
-                        <li class="list-group-item list-group-item-action" type="button">La Libertad</li>
-                        <li class="list-group-item list-group-item-action" type="button">Labason</li>
-                        <li class="list-group-item list-group-item-action" type="button">Leon Postigo</li>
-                        <li class="list-group-item list-group-item-action" type="button">Liloy</li>
-                        <li class="list-group-item list-group-item-action" type="button">Manukan </li>
-                        <li class="list-group-item list-group-item-action" type="button">Mutia</li>
-                        <li class="list-group-item list-group-item-action" type="button">Pinan</li>
-                        <li class="list-group-item list-group-item-action" type="button">Polanco</li>
-                        <li class="list-group-item list-group-item-action" type="button">Rizal</li>
-                        <li class="list-group-item list-group-item-action" type="button">Roxas</li>
-                        <li class="list-group-item list-group-item-action" type="button">Salug</li>
-                        <li class="list-group-item list-group-item-action" type="button">Sergio Osmeña Sr.</li>
-                        <li class="list-group-item list-group-item-action" type="button">Siayan</li>
-                        <li class="list-group-item list-group-item-action" type="button">Sibuco</li>   
-                        <li class="list-group-item list-group-item-action" type="button">Sibutad</li>   
-                        <li class="list-group-item list-group-item-action" type="button">Sindangan</li>   
-                        <li class="list-group-item list-group-item-action" type="button">Siocon</li>
-                        <li class="list-group-item list-group-item-action" type="button">Siraway</li>
-                        <li class="list-group-item list-group-item-action" type="button">Tampilisan</li> 
+                        <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Baliguian</li>   		
+                        <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Dapitan</li>	 	
+                        <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Dipolog</li>
+                        <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Godod</li>
+                        <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Gutalac</li>
+                        <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Jose Dalman</li> 
+                        <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Kalawit</li>   		
+                        <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Katipunan</li>	 	
+                        <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">La Libertad</li>
+                        <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Labason</li>
+                        <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Leon Postigo</li>
+                        <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Liloy</li>
+                        <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Manukan </li>
+                        <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Mutia</li>
+                        <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Pinan</li>
+                        <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Polanco</li>
+                        <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Rizal</li>
+                        <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Roxas</li>
+                        <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Salug</li>
+                        <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Sergio Osmeña Sr.</li>
+                        <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Siayan</li>
+                        <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Sibuco</li>   
+                        <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Sibutad</li>   
+                        <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Sindangan</li>   
+                        <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Siocon</li>
+                        <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Siraway</li>
+                        <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Tampilisan</li> 
                    </ul>
                   </div>
                 </div>
@@ -221,37 +85,37 @@
                <li class="dropdown-list2" data-bs-toggle="collapse"><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Zamboanga del Sur</a></li> 
               <!-- Zamboanga del Sur COLLAPSIBLE CHILD ROW-->
                <div class="collapse ms-5 m-2" id="dropdownMenu2">
-                <div class="">
+                <div class="list">
                  <ul class="list-group">
                  		
-                      <li class="list-group-item list-group-item-action" type="button">Aurora</li>	 	
-                      <li class="list-group-item list-group-item-action" type="button">Bayog</li>
-                      <li class="list-group-item list-group-item-action" type="button">Dimataling</li>
-                      <li class="list-group-item list-group-item-action" type="button">Dinas</li> 		
-                      <li class="list-group-item list-group-item-action" type="button">Don Mariano Marcos</li>	 	
-                      <li class="list-group-item list-group-item-action" type="button">Dumalinao</li>
-                      <li class="list-group-item list-group-item-action" type="button">Dumingag</li>
-                      <li class="list-group-item list-group-item-action" type="button">Guipos</li>
-                      <li class="list-group-item list-group-item-action" type="button">Josefina</li>
-                      <li class="list-group-item list-group-item-action" type="button">Kumalarang</li>
-                      <li class="list-group-item list-group-item-action" type="button">Labangan</li>
-                      <li class="list-group-item list-group-item-action" type="button">Lakewood</li>
-                      <li class="list-group-item list-group-item-action" type="button">Lapuyan</li>
-                      <li class="list-group-item list-group-item-action" type="button">Mahayag</li> 
-                      <li class="list-group-item list-group-item-action" type="button">Margo sa Tubig </li>   
-                      <li class="list-group-item list-group-item-action" type="button">Midsalip</li>   
-                      <li class="list-group-item list-group-item-action" type="button">Molave</li>
-                      <li class="list-group-item list-group-item-action" type="button">Pagadian</li>             
-                      <li class="list-group-item list-group-item-action" type="button">Pitogo</li>
-                      <li class="list-group-item list-group-item-action" type="button">Ramon Magsaysay</li>
-                      <li class="list-group-item list-group-item-action" type="button">San Miguel</li>
-                      <li class="list-group-item list-group-item-action" type="button">San Pablo</li>
-                      <li class="list-group-item list-group-item-action" type="button">Tabina</li>                      
-                      <li class="list-group-item list-group-item-action" type="button">Tambulig </li>   
-                      <li class="list-group-item list-group-item-action" type="button">Tigbad</li>   
-                      <li class="list-group-item list-group-item-action" type="button">Tukuran</li>         
-                      <li class="list-group-item list-group-item-action" type="button">Vicencio Sagun</li>
-                      <li class="list-group-item list-group-item-action" type="button">Zamboanga City</li>
+                      <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Aurora</li>	 	
+                      <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Bayog</li>
+                      <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Dimataling</li>
+                      <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Dinas</li> 		
+                      <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Don Mariano Marcos</li>	 	
+                      <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Dumalinao</li>
+                      <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Dumingag</li>
+                      <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Guipos</li>
+                      <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Josefina</li>
+                      <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Kumalarang</li>
+                      <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Labangan</li>
+                      <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Lakewood</li>
+                      <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Lapuyan</li>
+                      <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Mahayag</li> 
+                      <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Margo sa Tubig </li>   
+                      <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Midsalip</li>   
+                      <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Molave</li>
+                      <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Pagadian</li>             
+                      <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Pitogo</li>
+                      <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Ramon Magsaysay</li>
+                      <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">San Miguel</li>
+                      <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">San Pablo</li>
+                      <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Tabina</li>                      
+                      <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Tambulig </li>   
+                      <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Tigbad</li>   
+                      <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Tukuran</li>         
+                      <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Vicencio Sagun</li>
+                      <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Zamboanga City</li>
                  </ul>
                 </div>
               </div>
@@ -259,25 +123,25 @@
                <li class="dropdown-list3" data-bs-toggle="collapse"><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Zamboanga Sibugay</a></li> 
                   <!-- Zamboanga Sibugay COLLAPSIBLE CHILD ROW-->
                <div class="collapse ms-5 m-2" id="dropdownMenu3">
-                <div class="">
+                <div class="list">
                  <ul class="list-group">
                  		
-                  <li class="list-group-item list-group-item-action" type="button">Alicia</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Buug</li>
-                  <li class="list-group-item list-group-item-action" type="button">Diplahan</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Imelda</li>
-                  <li class="list-group-item list-group-item-action" type="button">Ipil</li>
-                  <li class="list-group-item list-group-item-action" type="button">Kabalasan</li>
-                  <li class="list-group-item list-group-item-action" type="button">Mabuhay</li>
-                  <li class="list-group-item list-group-item-action" type="button">Malangas</li>
-                  <li class="list-group-item list-group-item-action" type="button">Naga</li>
-                  <li class="list-group-item list-group-item-action" type="button">Olutanga</li>
-                  <li class="list-group-item list-group-item-action" type="button">Payao</li>
-                  <li class="list-group-item list-group-item-action" type="button">Roseller Lim </li>
-                  <li class="list-group-item list-group-item-action" type="button">Siay</li>
-                  <li class="list-group-item list-group-item-action" type="button">Talusan</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Titay</li>
-                  <li class="list-group-item list-group-item-action" type="button">Tungawan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Alicia</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Buug</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Diplahan</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Imelda</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Ipil</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Kabalasan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Mabuhay</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Malangas</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Naga</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Olutanga</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Payao</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Roseller Lim </li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Siay</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Talusan</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Titay</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Tungawan</li>
                  </ul>
                 </div>
               </div>
@@ -295,31 +159,31 @@
                 <li class="dropdown-list4" data-bs-toggle="collapse"><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Bukidnon</a></li> 
                 <!-- Bukidnon COLLAPSIBLE CHILD ROW-->
                 <div class="collapse ms-5 m-2" id="dropdownMenu4">
-                <div class="">
+                <div class="list">
                  <ul class="list-group">
                  		
-                  <li class="list-group-item list-group-item-action" type="button">Baungon</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Cabanglasan</li>
-                  <li class="list-group-item list-group-item-action" type="button">Damulog</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Dangcagan</li>
-                  <li class="list-group-item list-group-item-action" type="button">Don Carlos</li>
-                  <li class="list-group-item list-group-item-action" type="button">Impasugong</li>
-                  <li class="list-group-item list-group-item-action" type="button">Kadingilan</li>
-                  <li class="list-group-item list-group-item-action" type="button">Kalilangan</li>
-                  <li class="list-group-item list-group-item-action" type="button">Kibawe</li>
-                  <li class="list-group-item list-group-item-action" type="button">Kitaotao</li>
-                  <li class="list-group-item list-group-item-action" type="button">Lantapan</li>
-                  <li class="list-group-item list-group-item-action" type="button">Libona </li>
-                  <li class="list-group-item list-group-item-action" type="button">Malaybalay</li>
-                  <li class="list-group-item list-group-item-action" type="button">Malitbog</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Manolo Fortich</li>
-                  <li class="list-group-item list-group-item-action" type="button">Maramag</li>
-                  <li class="list-group-item list-group-item-action" type="button">Pangantucan</li>
-                  <li class="list-group-item list-group-item-action" type="button">Quezon </li>
-                  <li class="list-group-item list-group-item-action" type="button">San Fernando</li>
-                  <li class="list-group-item list-group-item-action" type="button">Sumilao</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Talakag</li>
-                  <li class="list-group-item list-group-item-action" type="button">Valencia</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Baungon</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Cabanglasan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Damulog</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Dangcagan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Don Carlos</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Impasugong</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Kadingilan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Kalilangan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Kibawe</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Kitaotao</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Lantapan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Libona </li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Malaybalay</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Malitbog</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Manolo Fortich</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Maramag</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Pangantucan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Quezon </li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">San Fernando</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Sumilao</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Talakag</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Valencia</li>
                  </ul>
                 </div>
               </div>
@@ -328,14 +192,14 @@
                <!-- CAMIGUIN COLLAPSIBLE CHILD ROW-->
                
                 <div class="collapse ms-5 m-2" id="dropdownMenu5">
-                  <div class="">
+                  <div class="list">
                    <ul class="list-group">
                        
-                    <li class="list-group-item list-group-item-action" type="button">Catarman</li> 
-                    <li class="list-group-item list-group-item-action" type="button">Guinsiliban</li>
-                    <li class="list-group-item list-group-item-action" type="button">Mahinog</li> 
-                    <li class="list-group-item list-group-item-action" type="button">Mambajao</li>
-                    <li class="list-group-item list-group-item-action" type="button">Sagay</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Catarman</li> 
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Guinsiliban</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Mahinog</li> 
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Mambajao</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Sagay</li>
                    
                    </ul>
                   </div>
@@ -345,32 +209,32 @@
                 <li class="dropdown-list6" data-bs-toggle="collapse"><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Lanao del Norte</a></li> 
                 <!-- LANAO DEL NORTE COLLAPSIBLE CHILD ROW-->
                 <div class="collapse ms-5 m-2" id="dropdownMenu6">
-                  <div class="">
+                  <div class="list">
                    <ul class="list-group">
                        
-                    <li class="list-group-item list-group-item-action" type="button">Bacolod</li> 
-                    <li class="list-group-item list-group-item-action" type="button">Baloi</li>
-                    <li class="list-group-item list-group-item-action" type="button">Baroy</li> 
-                    <li class="list-group-item list-group-item-action" type="button">Iligan</li>
-                    <li class="list-group-item list-group-item-action" type="button">Kapatagan</li>
-                    <li class="list-group-item list-group-item-action" type="button">Kauswagan</li>
-                    <li class="list-group-item list-group-item-action" type="button">Kolambugan</li>
-                    <li class="list-group-item list-group-item-action" type="button">Lala</li>
-                    <li class="list-group-item list-group-item-action" type="button">Linamon</li>
-                    <li class="list-group-item list-group-item-action" type="button">Magsaysay</li>
-                    <li class="list-group-item list-group-item-action" type="button">Maigo</li>
-                    <li class="list-group-item list-group-item-action" type="button">Matungao	</li>
-                    <li class="list-group-item list-group-item-action" type="button">Munai</li>
-                    <li class="list-group-item list-group-item-action" type="button">Nunungan</li> 
-                    <li class="list-group-item list-group-item-action" type="button">Pantao Ragat</li>
-                    <li class="list-group-item list-group-item-action" type="button">Pantar</li>
-                    <li class="list-group-item list-group-item-action" type="button">Poona Piagapo</li>
-                    <li class="list-group-item list-group-item-action" type="button">Salvador</li>
-                    <li class="list-group-item list-group-item-action" type="button">Sapad</li>
-                    <li class="list-group-item list-group-item-action" type="button">Sultan Naga Dimaporo (Karomatan)</li> 
-                    <li class="list-group-item list-group-item-action" type="button">Tagoloan</li>
-                    <li class="list-group-item list-group-item-action" type="button">Tangcal</li>
-                    <li class="list-group-item list-group-item-action" type="button">Tubod</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Bacolod</li> 
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Baloi</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Baroy</li> 
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Iligan</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Kapatagan</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Kauswagan</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Kolambugan</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Lala</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Linamon</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Magsaysay</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Maigo</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Matungao	</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Munai</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Nunungan</li> 
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Pantao Ragat</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Pantar</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Poona Piagapo</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Salvador</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Sapad</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Sultan Naga Dimaporo (Karomatan)</li> 
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Tagoloan</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Tangcal</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Tubod</li>
 
                    </ul>
                   </div>
@@ -379,27 +243,27 @@
                 <li class="dropdown-list7" data-bs-toggle="collapse"><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Misamis Occidental</a></li> 
                  <!-- MISAMIS OCCIDENTAL COLLAPSIBLE CHILD ROW-->
                  <div class="collapse ms-5 m-2" id="dropdownMenu7">
-                  <div class="">
+                  <div class="list">
                    <ul class="list-group">
                        
-                    <li class="list-group-item list-group-item-action" type="button">Aloran	</li> 
-                    <li class="list-group-item list-group-item-action" type="button">Baliangao	</li>
-                    <li class="list-group-item list-group-item-action" type="button">Bonifacio</li> 
-                    <li class="list-group-item list-group-item-action" type="button">Calamba</li>
-                    <li class="list-group-item list-group-item-action" type="button">Clarin</li>
-                    <li class="list-group-item list-group-item-action" type="button">Concepcion</li>
-                    <li class="list-group-item list-group-item-action" type="button">Don Victoriano Chiongbian
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Aloran	</li> 
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Baliangao	</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Bonifacio</li> 
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Calamba</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Clarin</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Concepcion</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Don Victoriano Chiongbian
                       (Don Mariano Marcos)</li>
-                    <li class="list-group-item list-group-item-action" type="button">Jimenez</li>
-                    <li class="list-group-item list-group-item-action" type="button">Lopez Jaena	</li>
-                    <li class="list-group-item list-group-item-action" type="button">Oroquieta	</li>
-                    <li class="list-group-item list-group-item-action" type="button">Ozamiz	</li>
-                    <li class="list-group-item list-group-item-action" type="button">Panaon		</li>
-                    <li class="list-group-item list-group-item-action" type="button">Plaridel	</li>
-                    <li class="list-group-item list-group-item-action" type="button">Sapang Dalaga	</li> 
-                    <li class="list-group-item list-group-item-action" type="button">Sinacaban	</li>
-                    <li class="list-group-item list-group-item-action" type="button">Tangub	</li>
-                    <li class="list-group-item list-group-item-action" type="button">Tudela	</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Jimenez</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Lopez Jaena	</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Oroquieta	</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Ozamiz	</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Panaon		</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Plaridel	</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Sapang Dalaga	</li> 
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Sinacaban	</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Tangub	</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Tudela	</li>
                    </ul>
                   </div>
                 </div>
@@ -408,35 +272,35 @@
                 
                 <!-- MISAMIS ORIENTAL COLLAPSIBLE CHILD ROW-->
                 <div class="collapse ms-5 m-2" id="dropdownMenu8">
-                  <div class="">
+                  <div class="list">
                    <ul class="list-group">
                        
-                    <li class="list-group-item list-group-item-action" type="button">Alubijid</li> 
-                    <li class="list-group-item list-group-item-action" type="button">Balingasag</li>
-                    <li class="list-group-item list-group-item-action" type="button">Balingoan</li> 
-                    <li class="list-group-item list-group-item-action" type="button">Binuangan</li>
-                    <li class="list-group-item list-group-item-action" type="button">Cagayan de Oro</li>
-                    <li class="list-group-item list-group-item-action" type="button">Claveria</li>
-                    <li class="list-group-item list-group-item-action" type="button">El Salvador</li>
-                    <li class="list-group-item list-group-item-action" type="button">Gingoog</li>
-                    <li class="list-group-item list-group-item-action" type="button">Gitagum</li>
-                    <li class="list-group-item list-group-item-action" type="button">Initao</li>
-                    <li class="list-group-item list-group-item-action" type="button">Jasaan</li>
-                    <li class="list-group-item list-group-item-action" type="button">Kinoguitan</li>
-                    <li class="list-group-item list-group-item-action" type="button">Lagonglong</li>
-                    <li class="list-group-item list-group-item-action" type="button">Laguindingan</li> 
-                    <li class="list-group-item list-group-item-action" type="button">Libertad</li>
-                    <li class="list-group-item list-group-item-action" type="button">Lugait</li>
-                    <li class="list-group-item list-group-item-action" type="button">Magsaysay</li>
-                    <li class="list-group-item list-group-item-action" type="button">Manticao</li>
-                    <li class="list-group-item list-group-item-action" type="button">Medina</li>
-                    <li class="list-group-item list-group-item-action" type="button">Naawan</li>
-                    <li class="list-group-item list-group-item-action" type="button">Opol</li>
-                    <li class="list-group-item list-group-item-action" type="button">Salay</li>
-                    <li class="list-group-item list-group-item-action" type="button">Sugbongcogon</li> 
-                    <li class="list-group-item list-group-item-action" type="button">Tagoloan</li>
-                    <li class="list-group-item list-group-item-action" type="button">Talisayan</li>
-                    <li class="list-group-item list-group-item-action" type="button">Villanueva</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Alubijid</li> 
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Balingasag</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Balingoan</li> 
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Binuangan</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Cagayan de Oro</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Claveria</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">El Salvador</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Gingoog</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Gitagum</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Initao</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Jasaan</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Kinoguitan</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Lagonglong</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Laguindingan</li> 
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Libertad</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Lugait</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Magsaysay</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Manticao</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Medina</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Naawan</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Opol</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Salay</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Sugbongcogon</li> 
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Tagoloan</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Talisayan</li>
+                    <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Villanueva</li>
                    </ul>
                   </div>
                 </div>
@@ -456,20 +320,20 @@
                 <li class="dropdown-list9" data-bs-toggle="collapse"><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Davao de Oro</a></li> 
                <!-- DAVAO DE ORO COLLAPSIBLE CHILD ROW-->
                <div class="collapse ms-5 m-2" id="dropdownMenu9">
-                <div class="">
+                <div class="list">
                  <ul class="list-group">
                      
-                  <li class="list-group-item list-group-item-action" type="button">Compostela	</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Laak	</li>
-                  <li class="list-group-item list-group-item-action" type="button">Mabini	</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Maco	</li>
-                  <li class="list-group-item list-group-item-action" type="button">Maragusan	</li>
-                  <li class="list-group-item list-group-item-action" type="button">Mawab	</li>
-                  <li class="list-group-item list-group-item-action" type="button">Monkayo	</li>
-                  <li class="list-group-item list-group-item-action" type="button">Montevista	</li>
-                  <li class="list-group-item list-group-item-action" type="button">Nabunturan	</li>
-                  <li class="list-group-item list-group-item-action" type="button">New Bataan	</li>
-                  <li class="list-group-item list-group-item-action" type="button">Pantukan	</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Compostela	</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Laak	</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Mabini	</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Maco	</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Maragusan	</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Mawab	</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Monkayo	</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Montevista	</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Nabunturan	</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">New Bataan	</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Pantukan	</li>
                  </ul>
                 </div>
               </div>
@@ -477,20 +341,20 @@
                 <li class="dropdown-list10" data-bs-toggle="collapse"><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Davao del Norte</a></li> 
                  <!-- DAVAO DEL NORTE COLLAPSIBLE CHILD ROW-->
                <div class="collapse ms-5 m-2" id="dropdownMenu10">
-                <div class="">
+                <div class="list">
                  <ul class="list-group">
                      
-                  <li class="list-group-item list-group-item-action" type="button">Asuncion</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Braulio E. Dujali</li>
-                  <li class="list-group-item list-group-item-action" type="button">Carmen</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Kapalong</li>
-                  <li class="list-group-item list-group-item-action" type="button">New Corella</li>
-                  <li class="list-group-item list-group-item-action" type="button">Panabo</li>
-                  <li class="list-group-item list-group-item-action" type="button">Samal</li>
-                  <li class="list-group-item list-group-item-action" type="button">San Isidro</li>
-                  <li class="list-group-item list-group-item-action" type="button">Santo Tomas</li>
-                  <li class="list-group-item list-group-item-action" type="button">Tagum</li>
-                  <li class="list-group-item list-group-item-action" type="button">Talaingod</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Asuncion</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Braulio E. Dujali</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Carmen</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Kapalong</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">New Corella</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Panabo</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Samal</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">San Isidro</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Santo Tomas</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Tagum</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Talaingod</li>
                  </ul>
                 </div>
               </div>
@@ -498,20 +362,20 @@
                 <li class="dropdown-list11" data-bs-toggle="collapse"><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Davao del Sur</a></li> 
                  <!-- DAVAO DEL SUR COLLAPSIBLE CHILD ROW-->
                <div class="collapse ms-5 m-2" id="dropdownMenu11">
-                <div class="">
+                <div class="list">
                  <ul class="list-group">
                      
-                  <li class="list-group-item list-group-item-action" type="button">Bansalan</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Davao City</li>
-                  <li class="list-group-item list-group-item-action" type="button">Digos</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Hagonoy</li>
-                  <li class="list-group-item list-group-item-action" type="button">Kiblawan</li>
-                  <li class="list-group-item list-group-item-action" type="button">Magsaysay</li>
-                  <li class="list-group-item list-group-item-action" type="button">Malalag</li>
-                  <li class="list-group-item list-group-item-action" type="button">Matanao</li>
-                  <li class="list-group-item list-group-item-action" type="button">Padada</li>
-                  <li class="list-group-item list-group-item-action" type="button">Santa Cruz</li>
-                  <li class="list-group-item list-group-item-action" type="button">Sulop</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Bansalan</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Davao City</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Digos</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Hagonoy</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Kiblawan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Magsaysay</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Malalag</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Matanao</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Padada</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Santa Cruz</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Sulop</li>
                  </ul>
                 </div>
               </div>
@@ -519,13 +383,13 @@
                 <li class="dropdown-list12" data-bs-toggle="collapse"><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Davao Occidental</a></li> 
                <!-- DAVAO OCCIDENTAL COLLAPSIBLE CHILD ROW-->
                <div class="collapse ms-5 m-2" id="dropdownMenu12">
-                <div class="">
+                <div class="list">
                  <ul class="list-group">   
-                  <li class="list-group-item list-group-item-action" type="button">Don Marcelino</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Jose Abad Santos</li>
-                  <li class="list-group-item list-group-item-action" type="button">Malita</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Santa Maria</li>
-                  <li class="list-group-item list-group-item-action" type="button">Sarangani</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Don Marcelino</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Jose Abad Santos</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Malita</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Santa Maria</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Sarangani</li>
                  </ul>
                 </div>
               </div>
@@ -533,19 +397,19 @@
                 <li class="dropdown-list13" data-bs-toggle="collapse"><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Davao Oriental</a></li> 
                <!-- DAVAO ORIENTAL COLLAPSIBLE CHILD ROW-->
                <div class="collapse ms-5 m-2" id="dropdownMenu13">
-                <div class="">
+                <div class="list">
                  <ul class="list-group">   
-                  <li class="list-group-item list-group-item-action" type="button">Baganga</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Banaybanay</li>
-                  <li class="list-group-item list-group-item-action" type="button">Boston</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Caraga</li>
-                  <li class="list-group-item list-group-item-action" type="button">Cateel</li>
-                  <li class="list-group-item list-group-item-action" type="button">Governor Generoso</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Lupon</li>
-                  <li class="list-group-item list-group-item-action" type="button">Manay</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Mati</li>
-                  <li class="list-group-item list-group-item-action" type="button">San Isidro	</li>
-                  <li class="list-group-item list-group-item-action" type="button">Tarragona</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Baganga</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Banaybanay</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Boston</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Caraga</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Cateel</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Governor Generoso</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Lupon</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Manay</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Mati</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">San Isidro	</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Tarragona</li>
 
                  </ul>
                 </div>
@@ -563,26 +427,26 @@
                 <li class="dropdown-list14" data-bs-toggle="collapse"><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Cotabato</a></li> 
                  <!-- COTABATO COLLAPSIBLE CHILD ROW-->
                <div class="collapse ms-5 m-2" id="dropdownMenu14">
-                <div class="">
+                <div class="list">
                  <ul class="list-group">   
-                  <li class="list-group-item list-group-item-action" type="button">Alamada</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Aleosan</li>
-                  <li class="list-group-item list-group-item-action" type="button">Antipas</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Arakan</li>
-                  <li class="list-group-item list-group-item-action" type="button">Banisilan</li>
-                  <li class="list-group-item list-group-item-action" type="button">Carmen</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Kabacan</li>
-                  <li class="list-group-item list-group-item-action" type="button">Kidapawan</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Libungan</li>
-                  <li class="list-group-item list-group-item-action" type="button">M'lang</li>
-                  <li class="list-group-item list-group-item-action" type="button">Magpet</li>
-                  <li class="list-group-item list-group-item-action" type="button">Makilala</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Matalam</li>
-                  <li class="list-group-item list-group-item-action" type="button">Midsayap</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Pigcawayan</li>
-                  <li class="list-group-item list-group-item-action" type="button">Pikit</li>
-                  <li class="list-group-item list-group-item-action" type="button">President Roxas</li>
-                  <li class="list-group-item list-group-item-action" type="button">Tulunan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Alamada</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Aleosan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Antipas</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Arakan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Banisilan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Carmen</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Kabacan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Kidapawan</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Libungan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">M'lang</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Magpet</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Makilala</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Matalam</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Midsayap</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Pigcawayan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Pikit</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">President Roxas</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Tulunan</li>
 
                  </ul>
                 </div>
@@ -592,15 +456,15 @@
                 <li class="dropdown-list15" data-bs-toggle="collapse"><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Sarangani</a></li> 
                  <!-- SARANGANI COLLAPSIBLE CHILD ROW-->
                <div class="collapse ms-5 m-2" id="dropdownMenu15">
-                <div class="">
+                <div class="list">
                  <ul class="list-group">   
-                  <li class="list-group-item list-group-item-action" type="button">Alabel</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Glan</li>
-                  <li class="list-group-item list-group-item-action" type="button">Kiamba</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Maasim</li>
-                  <li class="list-group-item list-group-item-action" type="button">Maitum</li>
-                  <li class="list-group-item list-group-item-action" type="button">Malapatan</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Malungon</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Alabel</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Glan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Kiamba</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Maasim</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Maitum</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Malapatan</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Malungon</li>
 
                  </ul>
                 </div>
@@ -609,20 +473,20 @@
                 <li class="dropdown-list16" data-bs-toggle="collapse"><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>South Cotabato</a></li> 
                <!-- SOUTH COTABATO COLLAPSIBLE CHILD ROW-->
                <div class="collapse ms-5 m-2" id="dropdownMenu16">
-                <div class="">
+                <div class="list">
                  <ul class="list-group">   
-                  <li class="list-group-item list-group-item-action" type="button">Banga</li> 
-                  <li class="list-group-item list-group-item-action" type="button">General Santos</li>
-                  <li class="list-group-item list-group-item-action" type="button">Koronadal</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Lake Sebu</li>
-                  <li class="list-group-item list-group-item-action" type="button">Norala</li>
-                  <li class="list-group-item list-group-item-action" type="button">Polomolok</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Santo Niño</li>
-                  <li class="list-group-item list-group-item-action" type="button">Surallah</li> 
-                  <li class="list-group-item list-group-item-action" type="button">T'Boli</li>
-                  <li class="list-group-item list-group-item-action" type="button">Tampakan</li>
-                  <li class="list-group-item list-group-item-action" type="button">Tantangan</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Tupi</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Banga</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">General Santos</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Koronadal</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Lake Sebu</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Norala</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Polomolok</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Santo Niño</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Surallah</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">T'Boli</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Tampakan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Tantangan</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Tupi</li>
 
                  </ul>
                 </div>
@@ -631,20 +495,20 @@
                 <li class="dropdown-list17" data-bs-toggle="collapse"><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Sultan Kudarat</a></li> 
                 <!-- SULTAN KUDARAT COLLAPSIBLE CHILD ROW-->
                <div class="collapse ms-5 m-2" id="dropdownMenu17">
-                <div class="">
+                <div class="list">
                  <ul class="list-group">   
-                  <li class="list-group-item list-group-item-action" type="button">Bagumbayan</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Columbio</li>
-                  <li class="list-group-item list-group-item-action" type="button">Esperanza</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Isulan</li>
-                  <li class="list-group-item list-group-item-action" type="button">Kalamansig</li>
-                  <li class="list-group-item list-group-item-action" type="button">Lambayong (Mariano Marcos)</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Lebak</li>
-                  <li class="list-group-item list-group-item-action" type="button">Lutayan</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Palimbang</li>
-                  <li class="list-group-item list-group-item-action" type="button">President Quirino</li>
-                  <li class="list-group-item list-group-item-action" type="button">Senator Ninoy Aquino</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Tacurong</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Bagumbayan</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Columbio</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Esperanza</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Isulan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Kalamansig</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Lambayong (Mariano Marcos)</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Lebak</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Lutayan</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Palimbang</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">President Quirino</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Senator Ninoy Aquino</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Tacurong</li>
 
                  </ul>
                 </div>
@@ -662,21 +526,21 @@
                 <li class="dropdown-list18" data-bs-toggle="collapse"><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Basilan</a></li> 
                 <!-- BASILAN COLLAPSIBLE CHILD ROW-->
                <div class="collapse ms-5 m-2" id="dropdownMenu18">
-                <div class="">
+                <div class="list">
                  <ul class="list-group">   
-                  <li class="list-group-item list-group-item-action" type="button">Akbar</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Al-Barka</li>
-                  <li class="list-group-item list-group-item-action" type="button">Hadji Mohammad Ajul</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Hadji Muhtamad</li>
-                  <li class="list-group-item list-group-item-action" type="button">Isabela</li>
-                  <li class="list-group-item list-group-item-action" type="button">Lamitan</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Lantawan</li>
-                  <li class="list-group-item list-group-item-action" type="button">Maluso</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Sumisip</li>
-                  <li class="list-group-item list-group-item-action" type="button">Tabuan-Lasa</li>
-                  <li class="list-group-item list-group-item-action" type="button">Tipo-Tipo</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Tuburan</li>
-                  <li class="list-group-item list-group-item-action" type="button">Ungkaya Pukan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Akbar</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Al-Barka</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Hadji Mohammad Ajul</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Hadji Muhtamad</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Isabela</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Lamitan</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Lantawan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Maluso</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Sumisip</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Tabuan-Lasa</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Tipo-Tipo</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Tuburan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Ungkaya Pukan</li>
                  </ul>
                 </div>
               </div>
@@ -684,48 +548,48 @@
                 <li class="dropdown-list19" data-bs-toggle="collapse"><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Lanao del Sur</a></li> 
                  <!-- LANAO DEL SUR COLLAPSIBLE CHILD ROW-->
                <div class="collapse ms-5 m-2" id="dropdownMenu19">
-                <div class="">
+                <div class="list">
                  <ul class="list-group">   
-                  <li class="list-group-item list-group-item-action" type="button">Amai Manabilang (Bumbaran)</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Bacolod-Kalawi (Bacolod-Grande)</li>
-                  <li class="list-group-item list-group-item-action" type="button">Balabagan</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Balindong (Watu)</li>
-                  <li class="list-group-item list-group-item-action" type="button">Bayang</li>
-                  <li class="list-group-item list-group-item-action" type="button">Binidayan</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Buadiposo-Buntong</li>
-                  <li class="list-group-item list-group-item-action" type="button">Bubong</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Butig</li>
-                  <li class="list-group-item list-group-item-action" type="button">Calanogas</li>
-                  <li class="list-group-item list-group-item-action" type="button">Ditsaan-Ramain</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Ganassi</li>
-                  <li class="list-group-item list-group-item-action" type="button">Kapai</li>
-                  <li class="list-group-item list-group-item-action" type="button">Kapatagan</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Lumba-Bayabao (Maguing)</li>
-                  <li class="list-group-item list-group-item-action" type="button">Lumbaca-Unayan</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Lumbatan</li>
-                  <li class="list-group-item list-group-item-action" type="button">Lumbayanague</li>
-                  <li class="list-group-item list-group-item-action" type="button">Madalum</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Madamba</li>
-                  <li class="list-group-item list-group-item-action" type="button">Maguing</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Malabang</li>
-                  <li class="list-group-item list-group-item-action" type="button">Marantao</li>
-                  <li class="list-group-item list-group-item-action" type="button">Marawi</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Marogong</li>
-                  <li class="list-group-item list-group-item-action" type="button">Masiu</li>
-                  <li class="list-group-item list-group-item-action" type="button">Mulondo</li>
-                  <li class="list-group-item list-group-item-action" type="button">Pagayawan (Tatarikan)</li>
-                  <li class="list-group-item list-group-item-action" type="button">Piagapo</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Picong (Sultan Gumander)</li>
-                  <li class="list-group-item list-group-item-action" type="button">Poona Bayabao (Gata)</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Pualas</li>
-                  <li class="list-group-item list-group-item-action" type="button">Saguiaran</li>
-                  <li class="list-group-item list-group-item-action" type="button">Sultan Dumalondong</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Tagoloan II</li>
-                  <li class="list-group-item list-group-item-action" type="button">Tamparan</li>
-                  <li class="list-group-item list-group-item-action" type="button">Taraka</li>
-                  <li class="list-group-item list-group-item-action" type="button">Tubaran</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Tugaya</li>
-                  <li class="list-group-item list-group-item-action" type="button">Wao</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Amai Manabilang (Bumbaran)</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Bacolod-Kalawi (Bacolod-Grande)</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Balabagan</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Balindong (Watu)</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Bayang</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Binidayan</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Buadiposo-Buntong</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Bubong</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Butig</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Calanogas</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Ditsaan-Ramain</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Ganassi</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Kapai</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Kapatagan</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Lumba-Bayabao (Maguing)</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Lumbaca-Unayan</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Lumbatan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Lumbayanague</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Madalum</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Madamba</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Maguing</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Malabang</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Marantao</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Marawi</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Marogong</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Masiu</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Mulondo</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Pagayawan (Tatarikan)</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Piagapo</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Picong (Sultan Gumander)</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Poona Bayabao (Gata)</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Pualas</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Saguiaran</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Sultan Dumalondong</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Tagoloan II</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Tamparan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Taraka</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Tubaran</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Tugaya</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Wao</li>
                  </ul>
                 </div>
               </div>
@@ -733,45 +597,44 @@
                 <li class="dropdown-list20" data-bs-toggle="collapse"><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Maguindanao</a></li> 
                  <!-- MAGUINDANAO COLLAPSIBLE CHILD ROW-->
                <div class="collapse ms-5 m-2" id="dropdownMenu20">
-                <div class="">
+                <div class="list">
                  <ul class="list-group">   
-                  <li class="list-group-item list-group-item-action" type="button">Ampatuan</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Barira</li>
-                  <li class="list-group-item list-group-item-action" type="button">Buldon</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Buluan</li>
-                  <li class="list-group-item list-group-item-action" type="button">Cotabato City</li>
-                  <li class="list-group-item list-group-item-action" type="button">Datu Abdullah Sangki</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Datu Anggal Midtimbang</li>
-                  <li class="list-group-item list-group-item-action" type="button">Datu Blah T. Sinsuat</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Datu Hoffer Ampatuan</li>
-                  <li class="list-group-item list-group-item-action" type="button">Datu Montawal</li>
-                  <li class="list-group-item list-group-item-action" type="button">Datu Odin Sinsuat</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Datu Paglas</li>
-                  <li class="list-group-item list-group-item-action" type="button">Datu Piang</li>
-                  <li class="list-group-item list-group-item-action" type="button">Datu Salibo</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Datu Saudi-Ampatuan</li>
-                  <li class="list-group-item list-group-item-action" type="button">Datu Unsay</li> 
-                  <li class="list-group-item list-group-item-action" type="button">General Salipada K. Pendatun</li>
-                  <li class="list-group-item list-group-item-action" type="button">Guindulungan</li>
-                  <li class="list-group-item list-group-item-action" type="button">Kabuntalan</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Mamasapano</li>
-                  <li class="list-group-item list-group-item-action" type="button">Mangudadatu</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Matanog</li>
-                  <li class="list-group-item list-group-item-action" type="button">Northern Kabuntalan</li>
-                  <li class="list-group-item list-group-item-action" type="button">Pagalungan</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Paglat</li>
-                  <li class="list-group-item list-group-item-action" type="button">Pandag</li>
-                  <li class="list-group-item list-group-item-action" type="button">Parang</li>
-                  <li class="list-group-item list-group-item-action" type="button">Rajah Buayan</li>
-                  <li class="list-group-item list-group-item-action" type="button">Shariff Aguak</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Shariff Saydona Mustapha</li>
-                  <li class="list-group-item list-group-item-action" type="button">South Upi</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Sultan Kudarat</li>
-                  <li class="list-group-item list-group-item-action" type="button">Sultan Mastura</li>
-                  <li class="list-group-item list-group-item-action" type="button">Sultan sa Barongis</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Sultan Sumagka</li>
-                  <li class="list-group-item list-group-item-action" type="button">Talayan</li>
-                  <li class="list-group-item list-group-item-action" type="button">Upi</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Ampatuan</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Barira</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Buldon</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Buluan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Cotabato City</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Datu Abdullah Sangki</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Datu Anggal Midtimbang</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Datu Blah T. Sinsuat</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Datu Hoffer Ampatuan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Datu Montawal</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Datu Odin Sinsuat</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Datu Piang</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Datu Salibo</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Datu Saudi-Ampatuan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Datu Unsay</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">General Salipada K. Pendatun</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Guindulungan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Kabuntalan</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Mamasapano</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Mangudadatu</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Matanog</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Northern Kabuntalan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Pagalungan</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Paglat</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Pandag</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Parang</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Rajah Buayan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Shariff Aguak</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Shariff Saydona Mustapha</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">South Upi</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Sultan Kudarat</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Sultan Mastura</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Sultan sa Barongis</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Sultan Sumagka</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Talayan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Upi</li>
                  </ul>
                 </div>
               </div>
@@ -779,48 +642,48 @@
                 <li class="dropdown-list21" data-bs-toggle="collapse"><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Sulu</a></li> 
                <!-- SULU COLLAPSIBLE CHILD ROW-->
                <div class="collapse ms-5 m-2" id="dropdownMenu21">
-                <div class="">
+                <div class="list">
                  <ul class="list-group">   
-                  <li class="list-group-item list-group-item-action" type="button">Banguingui</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Hadji Panglima Tahil</li>
-                  <li class="list-group-item list-group-item-action" type="button">Indanan</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Jolo</li>
-                  <li class="list-group-item list-group-item-action" type="button">Kalingalan Caluang</li>
-                  <li class="list-group-item list-group-item-action" type="button">Lugus</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Luuk</li>
-                  <li class="list-group-item list-group-item-action" type="button">Maimbung</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Old Panamao</li>
-                  <li class="list-group-item list-group-item-action" type="button">Omar</li>
-                  <li class="list-group-item list-group-item-action" type="button">Pandami</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Panglima Estino</li>
-                  <li class="list-group-item list-group-item-action" type="button">Pangutaran</li>
-                  <li class="list-group-item list-group-item-action" type="button">Parang</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Pata</li>
-                  <li class="list-group-item list-group-item-action" type="button">Patikul</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Siasi</li>
-                  <li class="list-group-item list-group-item-action" type="button">Talipao</li>
-                  <li class="list-group-item list-group-item-action" type="button">Tapul</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Banguingui</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Hadji Panglima Tahil</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Indanan</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Jolo</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Kalingalan Caluang</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Lugus</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Luuk</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Maimbung</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Old Panamao</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Omar</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Pandami</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Panglima Estino</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Pangutaran</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Parang</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Pata</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Patikul</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Siasi</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Talipao</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Tapul</li> 
                  </ul>
                 </div>
               </div>
 
                 <li class="dropdown-list22" data-bs-toggle="collapse"><a class="dropdown-item" href="#"><i class="fa fa-caret-down ms-3 me-2"></i>Tawi-Tawi</a></li> 
-               <!-- SULU COLLAPSIBLE CHILD ROW-->
+               <!-- TAWI-TAWI COLLAPSIBLE CHILD ROW-->
                <div class="collapse ms-5 m-2" id="dropdownMenu22">
-                <div class="">
+                <div class="list">
                  <ul class="list-group">   
-                  <li class="list-group-item list-group-item-action" type="button">Bongao</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Languyan</li>
-                  <li class="list-group-item list-group-item-action" type="button">Mapun</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Panglima Sugala</li>
-                  <li class="list-group-item list-group-item-action" type="button">Sapa-Sapa</li>
-                  <li class="list-group-item list-group-item-action" type="button">Sibutu</li> 
-                  <li class="list-group-item list-group-item-action" type="button">Simunul</li>
-                  <li class="list-group-item list-group-item-action" type="button">Sitangkai</li> 
-                  <li class="list-group-item list-group-item-action" type="button">South Ubian</li>
-                  <li class="list-group-item list-group-item-action" type="button">Tandubas</li>
-                  <li class="list-group-item list-group-item-action" type="button">Turtle Islands</li> 
-                 </ul>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button" value="Bongao">Bongao</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button" value="Languyan">Languyan</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Mapun</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Panglima Sugala</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Sapa-Sapa</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Sibutu</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Simunul</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Sitangkai</li> 
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">South Ubian</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Tandubas</li>
+                  <li data-bs-toggle="modal" data-bs-target="#exampleModal" class="list-group-item list-group-item-action" type="button">Turtle Islands</li> 
+                </ul>
                 </div>
               </div>
               
@@ -829,8 +692,32 @@
 
         </tbody>
       </table>
+
+
+<!-- Modal -->
+<div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Municipality</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h1 class="classMunicipality"></h1>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+      </div>
     </div>
+  </div>
+</div>
+
+    </div>   <!-- END OF MAIN DIV -->  
  
-   
+
+  
+  
+
 </body>
 </html>
