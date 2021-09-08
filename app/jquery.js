@@ -139,53 +139,29 @@ $(document).ready(function(){
         //  var municipality = $(this).text();
         // console.log(municipality);
           
-      var items = document.querySelectorAll(".list li"),
-      tab = [], index;
-      for(var i=0; i< items.length; i++){
-        tab.push(items[i].innerHTML);
-      }
-      //console.log(tab.indexOf('Sitangkai'));
-      //get selected element index
-      for(var i = 0; i <items.length; i++){
-        items[i].onclick = function() {
-        index =  tab.indexOf(this.innerHTML);
+      // var items = document.querySelectorAll(".list li"),
+      // tab = [], index;
+      // for(var i=0; i< items.length; i++){
+      //   tab.push(items[i].innerHTML);
+      // }
+
+      // //console.log(tab.indexOf('Sitangkai')); to check if the tab index is correct
+      // //get selected element index
+      // for(var i = 0; i <items.length; i++){
+      //   items[i].onclick = function() {
+      //   index =  tab.indexOf(this.innerHTML);
   
-        console.log(this.innerHTML);
-        document.querySelector('.classMunicipality').innerHTML = this.innerHTML;
-        };
-      }
+      //   //console.log(this.innerHTML);
+      //   document.querySelector('.classMunicipality').innerHTML = this.innerHTML;
+      //   };
+      // }
       
-      
-
-      // document.querySelector("classMunicipality").innerHTML = municipality;
        
-      //  var municipalityName = document.createElement("h1");
-      //     municipalityName.className = "classMunicipality";
-      //  var municipalityValue = municipality;
-      //     municipalityName.append(municipalityValue);
-      //     document.querySelector(".modal-body").appendChild(municipalityName);
 
-      //  var config = {
-      //    reportName : "Territory_Fact_Book_Report",
-      //    criteria: "(City_Municipality==" + municipality+ ")"
-      //  }
-       //initialization zoho
-      //  ZOHO.CREATOR.init()
-      // .then(function(data) {
-      //  var queryParams = ZOHO.CREATOR.UTIL.getQueryParams();
-    
-     //get all records API
-    //  ZOHO.CREATOR.API.getAllRecords(config).then(function(response){
-    //  //callback block
-    //  var record = response.data; 
-    //    for (var rec in record){
-    //      var region = record[rec].Region;
-    //      //console.log(region);
-       
-    //    } 
-    //  });
-    //});
-      });
+  
+  
+    });
+
 
       
   //end

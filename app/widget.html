@@ -7,7 +7,9 @@
   <link rel="stylesheet" href="style.css" type="text/css">
   <title>Document</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
- <!-- JavaScript Bundle with Popper -->
+  <!-- zoho js API -->
+  <script src="https://js.zohostatic.com/creator/widgets/version/1.0/widgetsdk-min.js"></script>
+  <!-- JavaScript Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -716,8 +718,58 @@
     </div>   <!-- END OF MAIN DIV -->  
  
 
+  <script>
+
+var items = document.querySelectorAll(".list li"),
+      tab = [], index;
+
+      var municipality;
+
+      for(var i=0; i< items.length; i++){
+        tab.push(items[i].innerHTML);
+      }
+
+      //console.log(tab.indexOf('Sitangkai')); to check if the tab index is correct
+      //get selected element index
+      for(var i = 0; i <items.length; i++){
+        items[i].onclick = function() {
+        index =  tab.indexOf(this.innerHTML);
   
-  
+        //console.log(this.innerHTML);
+        document.querySelector('.classMunicipality').innerHTML = this.innerHTML;
+          municipality = this.innerHTML;
+      
+        };
+      }
+      
+       
+      var config = {
+      reportName : "Territory_Fact_Book_Report",
+      criteria: "(City_Municipality==" + municipality+ ")"
+    }
+
+    //initialization zoho
+    ZOHO.CREATOR.init()
+      .then(function(data) {
+       var queryParams = ZOHO.CREATOR.UTIL.getQueryParams();
+
+    //get all records API
+   ZOHO.CREATOR.API.getAllRecords(config).then(function(response){
+     //callback block
+
+     var record = response.data; 
+     console.log(record);
+
+     for ( var i in record){
+
+      var region = record[i].Region;
+      console.log(region);
+     }
+
+   });
+  });
+  </script>
+    
 
 </body>
 </html>
