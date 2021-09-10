@@ -696,24 +696,491 @@
       </table>
 
 
-<!-- Modal -->
-<div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Municipality</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <h1 class="classMunicipality"></h1>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-      </div>
-    </div>
-  </div>
-</div>
+        <!-- Modal -->
+        <div class="modal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-lg modal-dialog-scrollable">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Municipality</h5>
+                <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <h1 class="classMunicipality"></h1>
+                <hr>
+                <h5 class="modal-title p-2"> <strong>Method of Territory Design:</strong> <span id="territory-design"></span></h5>
+                <h5 class="p-2"><strong>Facts about Territory as a Polical Unit:</strong></h5>
+                <h5 class="p-2" id="population"> <strong>Population:</strong></h5>
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col">City and Municipality</th>
+                      <th scope="col">Population Prior Year</th>
+                      <th scope="col">Pop Current Year</th>
+                      <th scope="col">% Share</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">Municipality value</th>
+                      <td>Population Prior Year value</td>
+                      <td>Pop Current Year value</td>
+                      <td>Percent Share value</td>
+                    </tr>
+                   
+                  </tbody>
+                  <!-- end of table -->
+                </table>
+                <h5 class="p-2" id="territory-classification"> <strong>Territory Classification: <br> This territory is classified as: </strong> <span id="classification">Territory Classification value</span></h5>
+                <h5 class="p-2"><strong>Names of Salespeople Assigned in the Territory</strong></h5>
+
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col">Name of Salesman</th>
+                      <th scope="col">Period</th>
+                      <th scope="col">Reason/s for Leaving</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Name of Salesman</td>
+                      <td>Period</td>
+                      <td>Reason/s for Leaving</td>
+                    </tr>
+                   
+                  </tbody>
+                  <!-- end of table -->
+                </table>
+                <h5 class="p-2"><strong>Master List of Customers and Prospects</strong></h5>
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col">Customer Name</th>
+                      <th scope="col">Channel Type</th>
+                      <th scope="col">Area</th>
+                      <th scope="col">Actual Ave. Monthly Sales</th>
+                      <th scope="col">FQ</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Customer Name value</td>
+                      <td>Channel Type value</td>
+                      <td>Area value</td>
+                      <td> Monthly Sales value</td>
+                      <td>FQ value</td>
+                    </tr>
+                   
+                  </tbody>
+                  <!-- end of table -->
+                </table>
+
+                <p><strong>FQ</strong> = Frequency of visits to customer per sales cycle</p>
+                <p><strong>F4</strong> = if you visit a customer every week in a cycle</p>
+                <p><strong>F2</strong> = if you visit a customer every other week </p>
+                <p><strong>F1</strong> = if you visit a customer once every month or cycle</p>
+
+                <h5 class="p-2"><strong>Prospects:</strong></h5>
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col">Prospect's Name</th>
+                      <th scope="col">Channel Type</th>
+                      <th scope="col">Area</th>
+                      <th scope="col">Ave. Monthly Sales Potential</th>
+                      <th scope="col">FQ</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Prospect's Name value</td>
+                      <td>Channel Type value</td>
+                      <td>Area value</td>
+                      <td>Ave.  Monthly Sales value</td>
+                      <td>FQ value</td>
+                    </tr>
+                   
+                  </tbody>
+                  <!-- end of table -->
+                </table>
+
+                <h5 class="p-2"><strong>Territory Coverage Summary:</strong></h5>
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col">Channel Type</th>
+                      <th scope="col">% Sales Contribution</th>
+                      <th scope="col">% to Total Customers</th>
+                      <th scope="col">% Number of Calls</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Channel Type value</td>
+                      <td>% Sales Contribution value</td>
+                      <td>% to Total Customers</td>
+                      <td>% Number of Calls</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Totals</td>
+                      <td>100%</td>
+                      <td>100%</td>
+                      <td>100%</td>
+                    </tr>
+                   
+                   
+                  </tbody>
+                  <!-- end of table -->
+                </table>
+                <h5 class="p-2"><strong>Key Observations:</strong> <span>Observation value</span></h5>
+
+                <h5 class="p-2"><strong>Territory Coverage Plans:</strong> <span>Coverage Plans value</span></h5>
+
+                <h5 class="p-2"><strong>Historical Sales Performance:</strong></h5>
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th scope="col"></th>
+                      <th scope="col">Ave. No. of SKUs Carried</th>
+                      <th scope="col">Y3</th>
+                      <th scope="col">Y2</th>
+                      <th scope="col">Y1</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                   
+                    <tr>
+                      <td>Sales</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>No. of Listed Accounts</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Regularly Buying</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                      <tr>
+                      <td>Occasionally Buying</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Dormant Accounts</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td>Productivity Rates</td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                  <!-- end of table -->
+                </table>
+                <h5 class="p-2"><strong>Key Observations(from the information above):</strong></h5>
+
+                <h5 class="p-2"><strong>SWOT analysis of OUR Company's position within the Territory</strong></h5>
+
+                <table class="table table-bordered">
+                 
+                    <tr>
+                      <th>Strengths</th>
+                      <th>Weaknesses (areas to improve)</th>
+                    </tr>
+                  <tr>
+                    <td>Things we do better Positive differentiation</td>
+                    <td>Standards we should reach to satisfy customers</td>
+                  </tr>
+                  <tr>
+                    <th>Opportunities</th>
+                    <th>Threats</th>
+                  </tr>
+                <tr>
+                  <td>Specific changes we could build on</td>
+                  <td>Activities which will damge our business</td>
+                </tr>
+                <tr>
+                  <th>Our Key Leverage Points</th>
+                  <th>Business Implications</th>
+                </tr>
+              <tr>
+                <td>Things we do better Positive differentiation</td>
+                <td>Standards we should reach to satisfy customers</td>
+              </tr>    
+                </table>
+                
+                <h5 class="p-2"><strong>Factors influencing our Company's performance in the Territory</strong></h5>
+
+                <table class="table table-bordered">
+                  <tr>
+                    <th>Previous Year</th>
+                    <th>Current Planned Year</th>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </table>
+
+                <h5 class="p-2"><strong>Key Observations(from the information above):</strong></h5>
+
+                <h5 class="p-2"><strong>SWOT analysis of OUR COMPETITORS within the Territory</strong></h5>
+                <table class="table table-bordered">
+                  <tr>
+                    <th>Strengths</th>
+                    <th>Weaknesses (areas to improve)</th>
+                  </tr>
+                <tr>
+                  <td>What are our competitor's existing strengths in the Territory?</td>
+                  <td>What are our competitor's existing weaknesses in the Territory?</td>
+                </tr>
+                <tr>
+                  <th>Opportunities</th>
+                  <th>Threats</th>
+                </tr>
+              <tr>
+                <td>What are the opportunities for competitor in the Territory?</td>
+                <td>What are the threats to competitor in the Territory?</td>
+              </tr>
+              <tr>
+                <th>Their Key Leverage Points</th>
+                <th>Business Implications to their Company</th>
+              </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>    
+                </table>
+
+                <h5 class="p-2"><strong>SWOT analysis of Our Distributor's position in the Territory</strong></h5>
+                <table class="table table-bordered">
+                  <tr>
+                    <th>Strengths</th>
+                    <th>Weaknesses (areas to improve)</th>
+                  </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <th>Opportunities</th>
+                  <th>Threats</th>
+                </tr>
+              <tr>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <th>Key Leverage Points</th>
+                <th>Business Implications</th>
+              </tr>
+            <tr>
+              <td></td>
+              <td></td>
+            </tr>    
+                </table>
+
+                <h5 class="p-2"><strong>Factors that are known to have been Positive and Negative in the Territory</strong></h5>
+                <table class="table table-bordered">
+                  <tr>
+                    <th>Positive</th>
+                    <th>Negative</th>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </table>
+                <h5 class="p-2"><strong>Key Observations (from the information above)</strong></h5>
+
+                <h5 class="p-2"><strong>Our Mission & Vision in the Territory</strong></h5>
+                <div class="col-sm-12 bg-light p-3 border">
+                  Vision: <p></p>
+                </div>
+                <div class="col-sm-12 bg-light p-3 border">
+                  Mision: <p></p>
+                </div>
+                <h5 class="p-2"><strong>Core Values that will guide us in the Territory</strong></h5>
+                <div class="col-sm-12 bg-light p-3 border">
+                   <p>Sample Value</p>
+                </div>
+                <h5 class="p-2"><strong>Our Objectives in the Territory:</strong></h5>
+               <table class="table table-bordered">
+                 <tr>
+                   <th>Financial:</th>
+                 </tr>
+                 <tr>
+                   <td height="150px"></td>
+                 </tr>
+                 <tr>
+                  <th>Marketing & Sales:</th>
+                </tr>
+                <tr>
+                  <td height="150px"></td>
+                </tr>
+                <tr>
+                  <th>Operational:</th>
+                </tr>
+                <tr>
+                  <td height="150px"></td>
+                </tr>
+                <tr>
+                  <th>Organizational:</th>
+                </tr>
+                <tr>
+                  <td height="150px"></td>
+                </tr>
+               </table>
+               <h5 class="p-2"><strong>Our Core Strategies</strong></h5>
+               <table class="table table-bordered">
+                <tr>
+                  <th>Financial:</th>
+                </tr>
+                <tr>
+                  <td height="150px"></td>
+                </tr>
+                <tr>
+                 <th>Marketing & Sales:</th>
+               </tr>
+               <tr>
+                 <td height="150px"></td>
+               </tr>
+               <tr>
+                 <th>Operational:</th>
+               </tr>
+               <tr>
+                 <td height="150px"></td>
+               </tr>
+               <tr>
+                 <th>Organizational:</th>
+               </tr>
+               <tr>
+                 <td height="150px"></td>
+               </tr>
+              </table>
+              <h5 class="p-2"><strong>CALENDAR OF ACTIVITIES IN THE TERRITORY</strong></h5>
+              <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th>Activities</th>
+                    <th>Budget</th>
+                    <th>Responsible</th>
+                    <th>Assumptions</th>
+                    <th>Date</th>
+                    <th>Date</th>
+                    <th>Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="p-2"><strong>PERFORMANCE METRICS:</strong></h5>
+              <h5 class="p-2"><strong>OPERATIONAL POLICY & PROCEDURE:</strong></h5>
+
+              <p>General</p>
+              <div style="height: 100px;" class="col-sm-12 bg-light p-3 border">
+                 <p></p>
+              </div>
+              <p>Marketing</p>
+              <div style="height: 100px;" class="col-sm-12 bg-light p-3 border">
+                 <p></p>
+              </div>
+              <p>Product Pipelining, Delisting, Returns, Destruction</p>
+              <div style="height: 100px;" class="col-sm-12 bg-light p-3 border">
+                 <p></p>
+              </div>
+              <p>Pricing</p>
+              <div style="height: 100px;" class="col-sm-12 bg-light p-3 border">
+                 <p></p>
+              </div>
+              <p>Ordering / Invoicing</p>
+              <div style="height: 100px;" class="col-sm-12 bg-light p-3 border">
+                 <p></p>
+              </div>
+              <p>Promotion</p>
+              <div style="height: 100px;" class="col-sm-12 bg-light p-3 border">
+                 <p></p>
+              </div>
+              <p>Customer Service</p>
+              <div style="height: 100px;" class="col-sm-12 bg-light p-3 border">
+                 <p></p>
+              </div>
+              <h5 class="p-2"><strong>Key Observations(from the information above):</strong></h5>
+                <!-- modal content -->
+                <div class="content" id="myTable"></div>
+                
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary close" data-bs-dismiss="modal">Close</button>
+                <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+              </div>
+            </div>
+          </div>
+        </div> <!-- END OF MODAL -->
 
     </div>   <!-- END OF MAIN DIV -->  
  
@@ -738,36 +1205,92 @@ var items = document.querySelectorAll(".list li"),
         //console.log(this.innerHTML);
         document.querySelector('.classMunicipality').innerHTML = this.innerHTML;
           municipality = this.innerHTML;
-      
-        };
-      }
-      
-       
-      var config = {
+          var config = {
       reportName : "Territory_Fact_Book_Report",
-      criteria: "(City_Municipality==" + municipality+ ")"
+      //criteria: "(City_Municipality == " +municipality+ ")"
     }
 
-    //initialization zoho
-    ZOHO.CREATOR.init()
-      .then(function(data) {
-       var queryParams = ZOHO.CREATOR.UTIL.getQueryParams();
+        //initialization zoho
+        ZOHO.CREATOR.init()
+        .then(function(data) {
+        var queryParams = ZOHO.CREATOR.UTIL.getQueryParams();
+        //get all records API
+        ZOHO.CREATOR.API.getAllRecords(config).then(function(response){
+          //callback block
 
-    //get all records API
-   ZOHO.CREATOR.API.getAllRecords(config).then(function(response){
-     //callback block
+          var record = response.data; 
+          console.log(record);
 
-     var record = response.data; 
-     console.log(record);
+          for ( var i in record){
+            if (record[i].City_Municipality == municipality){
+            
+              //region
+              var region = record[i].Region;
+              console.log(region);
+              var regionLabel = document.createElement('label');
+              var regionElement = document.createElement('p');
+              regionLabel.append("Region:")
+              regionElement.append(region);
+              document.querySelector(".content").append(regionLabel);
+              document.querySelector(".content").append(regionElement);
 
-     for ( var i in record){
+              //Province
+              var province = record[i].Province;
+              var provinceElement = document.createElement('p');
+              provinceElement.append(province);
+              document.querySelector(".content").append(provinceElement);
 
-      var region = record[i].Region;
-      console.log(region);
-     }
+              //Territory design
+              var territoryDesign = record[i].Territory_Design;
+              var territoryDesignElement = territoryDesign;
+              document.getElementById("territory-design").innerHTML = territoryDesignElement;
 
-   });
-  });
+              //Territory Classification
+              var territoryClassification = record[i].Terrtory_Classification;
+              var territoryClassificationElement = territoryClassification;
+             document.getElementById("classification").innerHTML = territoryClassificationElement;
+
+              //Population
+              var populationRecord = record[i].Population;
+              var populationTable = document.createElement('table');
+              var populationTbody = document.createElement('tbody');
+              var populationTR = document.createElement('tr');
+              var populationTH1 = document.createElement('th');
+              var populationTH2 = document.createElement('th');
+              var populationTH3 = document.createElement('th');
+              populationTH1.append("Population Prior Year")
+              populationTH2.append("Population Current Year")
+              populationTH3.append("Share")
+              populationTR.append(populationTH1);
+              populationTR.append(populationTH2);
+              populationTR.append(populationTH3);
+              populationTable.append(populationTbody);
+              populationTbody.append(populationTR);
+
+
+              for(var j in populationRecord){
+              var population = populationRecord[j].display_value;
+              console.log(population);
+              var populationTR2 = document.createElement('tr');
+              const populationSplit = population.split(",");
+                for(var k in populationSplit){
+                  var td= populationSplit[k];
+                  populationTR2.append(td);
+                }
+                populationTbody.append(populationTR2);
+              }
+              
+              document.querySelector('.content').append(populationTable);
+             
+              //Names of Salespeople Assigned in the Territory
+
+            }
+          }
+
+        });
+        });
+        };
+        }
   </script>
     
 

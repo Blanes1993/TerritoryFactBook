@@ -129,35 +129,16 @@ $(document).ready(function(){
       $("#dropdownMenu22").toggle();
     });
 
-      // $("#municipality").click(function(){
-      //   $("#exampleModal").show();
-      // })
 
-
+      //MODAL
       $(".list-group-item").click(function(){
         $("#exampleModal").show();
-        //  var municipality = $(this).text();
-        // console.log(municipality);
-          
-      // var items = document.querySelectorAll(".list li"),
-      // tab = [], index;
-      // for(var i=0; i< items.length; i++){
-      //   tab.push(items[i].innerHTML);
-      // }
-
-      // //console.log(tab.indexOf('Sitangkai')); to check if the tab index is correct
-      // //get selected element index
-      // for(var i = 0; i <items.length; i++){
-      //   items[i].onclick = function() {
-      //   index =  tab.indexOf(this.innerHTML);
-  
-      //   //console.log(this.innerHTML);
-      //   document.querySelector('.classMunicipality').innerHTML = this.innerHTML;
-      //   };
-      // }
-      
        
-
+        //to erase data inside modal 
+        $(".close").click(function(){
+          document.querySelector(".content").innerHTML = '';
+        })
+    
   
   
     });
