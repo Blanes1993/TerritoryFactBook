@@ -135,12 +135,10 @@ $(document).ready(function(){
         $("#exampleModal").show();
        
         //to erase data inside modal 
-        $(".close").click(function(){
-          document.querySelector(".content").innerHTML = '';
-        })
-    
-  
-  
+        // $(".close").click(function(){
+        //   $("#myTable").hide();
+        // })
+        
     });
 
 
