@@ -63,21 +63,21 @@ var items = document.querySelectorAll(".list li"),
             for(var j in populationRecord){
             var city_municipality = record[i].City_Municipality;
             var population = populationRecord[j].display_value;
-            document.getElementById("city_municipality").innerHTML=city_municipality;
             const populationSplit = population.split(",");
-              for(var k in populationSplit){
-                var td= populationSplit[k];
-                // var popTrow = document.getElementById('popTrow');
-                // var trow = document.createElement('tr');
-                // var tdata = document.createElement('td');
-                // var tdataClass = document.createAttribute('class');
-                // tdataClass.value = "subpop";
-                // trow.setAttributeNode(tdataClass);
-                // trow.appendChild(tdata);
-                // document.getElementsByClassName('subpop')[k].appendChild(popTrow);
-                document.getElementsByClassName("pop")[k].innerHTML=td;
-              }
+            var trow = document.createElement('tr');
+            var thead = document.createElement('th');
+            thead.append(city_municipality);
+            trow.append(thead);
+              for (var k in populationSplit){
+              var td= populationSplit[k];
+              var tdata = document.createElement('td');
+              tdata.append(td);
+              trow.append(tdata);
             }
+            document.querySelector('.tbody').append(trow);
+
+              }
+            
            
             //Names of Salespeople Assigned in the Territory
             var salesman= record[i].Names_of_Salesman;
