@@ -133,14 +133,13 @@ $(document).ready(function(){
       //MODAL
       $(".list-group-item").click(function(){
         $("#exampleModal").show();
-       
-        //to erase data inside modal 
-        // $(".close").click(function(){
-        //   $("#myTable").hide();
-        // })
+  
         
     });
 
+    $(".close").click(function(){
+      $(".hide-data").removeData();
+    });
 
       
   //end

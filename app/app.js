@@ -12,8 +12,14 @@ var items = document.querySelectorAll(".list li"),
       //get selected element index
       for(var i = 0; i <items.length; i++){
         items[i].onclick = function() {   
-        document.getElementById('myTable').style.display = 'block';
-        document.getElementById('message').innerHTML = '';
+        document.getElementById('myTable').style.display = "";
+        document.getElementById('message').innerHTML = "";
+        document.getElementById("hideData1").innerHTML = "";
+        document.getElementById("hideData2").innerHTML = "";
+        document.getElementById("hideData3").innerHTML = "";
+        document.getElementById("hideData4").innerHTML = "";
+        document.getElementById("hideData5").innerHTML = "";
+        document.getElementById("hideData6").innerHTML = "";
         index =  tab.indexOf(this.innerHTML);
   
         //console.log(this.innerHTML);
@@ -59,7 +65,7 @@ var items = document.querySelectorAll(".list li"),
 
             //Population
             var populationRecord = record[i].Population;
-            console.log(populationRecord);
+            //console.log(populationRecord);
             for(var j in populationRecord){
             var city_municipality = record[i].City_Municipality;
             var population = populationRecord[j].display_value;
@@ -75,55 +81,67 @@ var items = document.querySelectorAll(".list li"),
               trow.append(tdata);
             }
             document.querySelector('.tbody').append(trow);
-
               }
             
            
             //Names of Salespeople Assigned in the Territory
             var salesman= record[i].Names_of_Salesman;
-
             for(var j in salesman){
             var sales = salesman[j].display_value;
             const salesmanSplit = sales.split(",");
+            var trow = document.createElement('tr');
               for(var k in salesmanSplit){
                 var td= salesmanSplit[k];
-                document.getElementsByClassName("sales")[k].innerHTML=td;
+                var tdata = document.createElement('td');
+                tdata.append(td);
+                trow.append(tdata);
               }
+              document.querySelector('.tbody-sm').append(trow);
             }
 
             //Customers
             var customer= record[i].Customers;
-
             for(var j in customer){
             var customerdata = customer[j].display_value;
             const customerSplit = customerdata.split(",");
+            var trow = document.createElement('tr');
               for(var k in customerSplit){
                 var td= customerSplit[k];
-                document.getElementsByClassName("customer")[k].innerHTML=td;
+                var tdata = document.createElement('td');
+                tdata.append(td);
+                trow.append(tdata);
               }
+              document.querySelector('.tbody-customer').append(trow);
             }
 
              //Prospects
              var prospects= record[i].Prospects;
-
             for(var j in prospects){
             var prospectdata = prospects[j].display_value;
             const prospectSplit = prospectdata.split(",");
+            var trow = document.createElement('tr');
               for(var k in prospectSplit){
                 var td= prospectSplit[k];
-                document.getElementsByClassName("prospects")[k].innerHTML=td;
+                var tdata = document.createElement('td');
+                tdata.append(td);
+                trow.append(tdata);
               }
+              document.querySelector('.tbody-prospects').append(trow);
             }
             //Territory Coverage Summary
             var coverageSummary = record[i].Territory_Coverage_Summary;
             for(var j in coverageSummary){
               var summaryData = coverageSummary[j].display_value;
               const summarySplit = summaryData.split(",");
+              var trow = document.createElement('tr');
               for(var k in summarySplit){
                 var td= summarySplit[k];
-              
-                document.getElementsByClassName("summary")[k].innerHTML=td;
+                var tdata = document.createElement('td');
+                tdata.append(td);
+                trow.append(tdata);
               }
+              //you can change to append
+              document.querySelector('.tbody-summary').prepend(trow);
             }
             //Territory Coverage Summary Subform
           
@@ -317,14 +335,18 @@ var items = document.querySelectorAll(".list li"),
           
            //CALENDAR OF ACTIVITIES IN THE TERRITORY
            var calendar = record[i].Calendar_of_Activities_in_the_Territory;
-
+           // console.log(calendar);
             for(var j in calendar){
             var calendardata = calendar[j].display_value;
             const calendarSplit = calendardata.split(",");
+            var trow = document.createElement('tr');
               for(var k in calendarSplit){
                 var td= calendarSplit[k];
-                document.getElementsByClassName("calendar")[k].innerHTML=td;
+                var tdata = document.createElement('td');
+                tdata.append(td);
+                trow.append(tdata);
               }
+              document.querySelector('.tbody-calendar').append(trow);
             }
 
             //metrics
@@ -353,21 +375,33 @@ var items = document.querySelectorAll(".list li"),
              //Key observation 4
              var key_observation4 = record[i].Key_Observations4;
             document.getElementById('key-obs4').innerHTML = key_observation4;
-          } else {
-            document.getElementById('message').innerHTML = message;
-            document.getElementById('myTable').style.display = 'none';
-          }
-          return null;
+           } else {
+            continue;
+          // } else {
+          //     document.getElementById('message').innerHTML = message;
+          //     document.getElementById('myTable').style.display = "none";
+          //    }
         }
+        
+      }
 
     });//end of zoho creator api
     
 
   });//end of zoho initialization
-  
+ 
   };//end of selected function
-  
 }
 
 
 
+// function hideData(){
+
+//   document.getElementById("hideData1").innerHTML = "none";
+//   document.getElementById("hideData2").innerHTML = "none";
+//   document.getElementById("hideData3").innerHTML = "none";
+//   document.getElementById("hideData4").innerHTML = "none";
+//   document.getElementById("hideData5").innerHTML = "none";
+//   document.getElementById("hideData6").innerHTML = "none";
+
+// }
