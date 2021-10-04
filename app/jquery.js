@@ -138,7 +138,7 @@ $(document).ready(function(){
     });
 
     $(".close").click(function(){
-      $(".hide-data").removeData();
+      $('section').remove();
     });
 
       
